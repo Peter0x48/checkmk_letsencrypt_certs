@@ -1,0 +1,29 @@
+{
+    'author': u'Peter Hurtenbach <mail@peter-hurtenbach.de>',
+    'description': u'Checkmk Agent Plugin and Checks for Certbot Lets Encrypt Certificate Monitoring',
+    'download_url': '',
+    'files': {
+        'agent_based': [],
+        'agents': [
+            'linux/plugins/letsencrypt_certs.py'
+        ],
+        'cmk_addons_plugins': [
+            'letsencrypt_certs/agent_based/letsencrypt_certs.py',
+            'letsencrypt_certs/graphing/letsencrypt_certs.py',
+            'letsencrypt_certs/rulesets/check_parameters.py'
+        ],
+        'checkman': [],
+        'checks': [],
+        'doc': [],
+        'inventory': [],
+        'notifications': [],
+        'pnp-templates': [],
+        'web': []
+    },
+    'name': 'letsencrypt_certs',
+    'title': u'Certbot Lets Encrypt Certificate Monitoring',
+    'version': '0.0.1',
+    'version.min_required': '2.0.0',
+    'version.packaged': '2.3.0',
+    'version.usable_until': '2.3.0',
+}
