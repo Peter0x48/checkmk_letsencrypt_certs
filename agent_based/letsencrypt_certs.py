@@ -33,6 +33,9 @@ def discovery_letsencrypt_certs(section):
 
 
 def check_letsencrypt_certs(item, params, section):
+    if item not in section:
+        return
+
     expiry = int(section[item]) * 24 * 60 * 60
 
     yield from check_levels(
